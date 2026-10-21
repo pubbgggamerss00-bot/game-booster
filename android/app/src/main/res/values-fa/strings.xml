@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">گیم بوستر</string>
+    <string name="subtitle">بواستر عملکرد بدون روت مخصوص گیمرها</string>
+
+    <string name="ram_title">حافظه (RAM)</string>
+    <string name="ram_usage">%1$s گیگابایت مصرف‌شده از %2$s گیگابایت</string>
+
+    <string name="temp_title">دمای باتری</string>
+    <string name="temp_value">%1$s درجه سانتی‌گراد</string>
+    <string name="temp_na">در این دستگاه در دسترس نیست</string>
+
+    <string name="net_title">وضعیت شبکه</string>
+    <string name="net_checking">در حال بررسی…</string>
+    <string name="net_result">پینگ %1$s میلی‌ثانیه • DNS %2$d میلی‌ثانیه</string>
+    <string name="net_dns_only">DNS %1$d میلی‌ثانیه (پینگ مسدود است)</string>
+    <string name="net_fail">بررسی شبکه ناموفق بود</string>
+    <string name="net_note">DNS فقط سرعت حل نام دامنه را بهتر می‌کند — پینگ داخل بازی ممکن است تغییر نکند</string>
+
+    <string name="boost">بوست و اجرای بازی</string>
+    <string name="boosting">در حال بهینه‌سازی…</string>
+
+    <string name="last_title">آخرین بهینه‌سازی</string>
+    <string name="last_line">%1$s مگابایت آزاد شد • %2$d فرایند • %3$s</string>
+    <string name="boost_done_line">%1$s مگابایت آزاد شد • توقف %2$d فرایند پس‌زمینه درخواست شد</string>
+    <string name="no_history">هنوز بهینه‌سازی انجام نشده — دکمه بوست را بزنید</string>
+
+    <string name="games_title">بازی‌ها و اپ‌های نصب‌شده</string>
+    <string name="games_loading">در حال اسکن اپ‌های نصب‌شده…</string>
+    <string name="games_empty">هیچ اپ قابل‌اجرایی پیدا نشد</string>
+    <string name="chip_game">بازی</string>
+    <string name="tap_to_launch">برای اجرا روی هر اپ بزنید</string>
+
+    <string name="no_root_note">بدون نیاز به روت • داده‌های بازی شما امن می‌ماند • هرگز اپ‌های سیستمی دست‌نخورده می‌مانند • کش Shader محافظت می‌شود تا داخل بازی لگ نیفتد</string>
+</resources>
