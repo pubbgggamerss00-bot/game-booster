@@ -195,7 +195,6 @@
     <string name="ram_label">Total RAM</string>
     <string name="screen_label">Screen</string>
     <string name="battery_label">Battery</string>
-    <string name="battery_na">Unknown</string>
     <string name="network_label">Network</string>
     <string name="root_status">Root status</string>
     <string name="root_ok">Not required — works without root</string>

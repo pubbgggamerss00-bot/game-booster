@@ -195,7 +195,6 @@
     <string name="ram_label">رم کل</string>
     <string name="screen_label">صفحه</string>
     <string name="battery_label">باتری</string>
-    <string name="battery_na">نامشخص</string>
     <string name="network_label">شبکه</string>
     <string name="root_status">وضعیت روت</string>
     <string name="root_ok">لازم نیست — بدون روت کار می‌کند</string>
