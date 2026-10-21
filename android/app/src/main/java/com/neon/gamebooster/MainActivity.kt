@@ -3,6 +3,7 @@ package com.neon.gamebooster
 import android.app.Activity
 import android.app.ActivityManager
 import android.content.Context
+import android.content.IntentFilter
 import android.content.pm.ApplicationInfo
 import android.content.pm.PackageManager
 import android.content.res.ColorStateList
@@ -237,9 +238,9 @@ class MainActivity : Activity() {
             var text: String? = null
             var hot = false
             try {
-                val bm = getSystemService(Context.BATTERY_SERVICE) as BatteryManager
-                val t = bm.getIntProperty(BatteryManager.BATTERY_PROPERTY_TEMPERATURE)
-                if (t in 1..900) {
+                val intent = registerReceiver(null, IntentFilter(BatteryManager.ACTION_BATTERY_CHANGED))
+                val t = intent?.getIntExtra(BatteryManager.EXTRA_TEMPERATURE, Int.MIN_VALUE) ?: Int.MIN_VALUE
+                if (t != Int.MIN_VALUE && t > 0 && t < 900) {
                     val c = t / 10.0
                     hot = c >= 40.0
                     text = String.format(Locale.US, "%.1f", c)
