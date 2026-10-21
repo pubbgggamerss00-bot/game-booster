@@ -20,7 +20,7 @@ import androidx.compose.material.icons.filled.AutoAwesome
 import androidx.compose.material.icons.filled.BatterySaver
 import androidx.compose.material.icons.filled.Bolt
 import androidx.compose.material.icons.filled.DarkMode
-import androidx.compose.material.icons.filled.Eraser
+import androidx.compose.material.icons.filled.CleaningServices
 import androidx.compose.material.icons.filled.HelpOutline
 import androidx.compose.material.icons.filled.LightMode
 import androidx.compose.material.icons.filled.Shield
@@ -137,7 +137,7 @@ fun SettingsScreen(vm: AppViewModel) {
                 onChange = { vm.toggleSetting("perfMode") }
             )
             SettingsToggleRow(
-                icon = Icons.Filled.Eraser,
+                icon = Icons.Filled.CleaningServices,
                 tint = MaterialTheme.colorScheme.primary,
                 title = stringResource(R.string.bg_clean),
                 sub = stringResource(R.string.bg_clean_sub),
