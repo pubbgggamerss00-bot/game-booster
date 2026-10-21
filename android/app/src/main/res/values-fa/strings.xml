@@ -18,6 +18,7 @@
     <string name="best_server">بهترین سرور</string>
     <string name="copied">در حافظه کپی شد</string>
     <string name="retry">تلاش دوباره</string>
+    <string name="save">ذخیره</string>
 
     <!-- home -->
     <string name="select_game_none">بازی انتخاب نشده — از بخش بازی‌ها انتخاب کنید</string>

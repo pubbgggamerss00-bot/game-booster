@@ -18,6 +18,7 @@
     <string name="best_server">Best server</string>
     <string name="copied">Copied to clipboard</string>
     <string name="retry">Retry</string>
+    <string name="save">Save</string>
 
     <!-- home -->
     <string name="select_game_none">No game selected — pick one from Library</string>
