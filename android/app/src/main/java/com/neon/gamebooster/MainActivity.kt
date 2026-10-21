@@ -3,6 +3,7 @@ package com.neon.gamebooster
 import android.app.Activity
 import android.app.ActivityManager
 import android.content.Context
+import android.content.Intent
 import android.content.IntentFilter
 import android.content.pm.ApplicationInfo
 import android.content.pm.PackageManager
@@ -238,7 +239,7 @@ class MainActivity : Activity() {
             var text: String? = null
             var hot = false
             try {
-                val intent = registerReceiver(null, IntentFilter(BatteryManager.ACTION_BATTERY_CHANGED))
+                val intent = registerReceiver(null, IntentFilter(Intent.ACTION_BATTERY_CHANGED))
                 val t = intent?.getIntExtra(BatteryManager.EXTRA_TEMPERATURE, Int.MIN_VALUE) ?: Int.MIN_VALUE
                 if (t != Int.MIN_VALUE && t > 0 && t < 900) {
                     val c = t / 10.0
@@ -320,7 +321,7 @@ class MainActivity : Activity() {
             Thread.sleep(1000) // let the system settle
             val mi2 = ActivityManager.MemoryInfo()
             am.getMemoryInfo(mi2)
-            val freedMB = Math.max(0, (mi2.availMem - before) / MB)
+            val freedMB = maxOf(0L, (mi2.availMem - before) / MB)
             val dnsMs = dnsTimeMs()
             main.post { showBoostDone(freedMB, asked, dnsMs) }
         }
