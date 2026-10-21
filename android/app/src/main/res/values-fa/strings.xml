@@ -1,35 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">گیم بوستر</string>
-    <string name="subtitle">بواستر عملکرد بدون روت مخصوص گیمرها</string>
 
+    <!-- nav / common -->
+    <string name="nav_home">خانه</string>
+    <string name="nav_library">بازی‌ها</string>
+    <string name="nav_monitor">پایش</string>
+    <string name="nav_settings">تنظیمات</string>
+    <string name="back">بازگشت</string>
+    <string name="close">بستن</string>
+    <string name="all">همه</string>
+    <string name="favorites">موردعلاقه</string>
+    <string name="search_hint">جست‌وجوی اپ…</string>
+    <string name="empty_list">چیزی اینجا نیست</string>
+    <string name="launch">اجرا</string>
+    <string name="test_all">تست همه سرورها</string>
+    <string name="best_server">بهترین سرور</string>
+    <string name="copied">در حافظه کپی شد</string>
+    <string name="retry">تلاش دوباره</string>
+
+    <!-- home -->
+    <string name="select_game_none">بازی انتخاب نشده — از بخش بازی‌ها انتخاب کنید</string>
     <string name="ram_title">حافظه (RAM)</string>
-    <string name="ram_usage">%1$s گیگابایت مصرف‌شده از %2$s گیگابایت</string>
-
+    <string name="ram_usage_fmt">%1$s گیگابایت مصرف‌شده از %2$s گیگابایت</string>
+    <string name="tiles_ram">رم</string>
+    <string name="tiles_dns">DNS</string>
+    <string name="tiles_network">شبکه</string>
+    <string name="tiles_device">دستگاه</string>
+    <string name="cores_fmt">%1$d هسته</string>
     <string name="temp_title">دمای باتری</string>
-    <string name="temp_value">%1$s درجه سانتی‌گراد</string>
-    <string name="temp_na">در این دستگاه در دسترس نیست</string>
-
+    <string name="temp_value">%1$s درجه</string>
+    <string name="temp_na">در دسترس نیست</string>
+    <string name="cpu_title">پردازنده</string>
+    <string name="boost_btn">بوست و اجرای بازی</string>
+    <string name="last_boost">آخرین بهینه‌سازی</string>
+    <string name="no_history">هنوز بهینه‌سازی انجام نشده</string>
     <string name="net_title">وضعیت شبکه</string>
-    <string name="net_checking">در حال بررسی…</string>
-    <string name="net_result">پینگ %1$s میلی‌ثانیه • DNS %2$d میلی‌ثانیه</string>
-    <string name="net_dns_only">DNS %1$d میلی‌ثانیه (پینگ مسدود است)</string>
-    <string name="net_fail">بررسی شبکه ناموفق بود</string>
-    <string name="net_note">DNS فقط سرعت حل نام دامنه را بهتر می‌کند — پینگ داخل بازی ممکن است تغییر نکند</string>
+    <string name="net_checking">هنوز تست نشده</string>
+    <string name="net_note">DNS فقط حل نام دامنه را بهتر می‌کند — پینگ داخل بازی ممکن است تغییر نکند</string>
+    <string name="quality_line">%1$s • امتیاز %2$d از ۱۰۰</string>
+    <string name="quality_excellent">عالی</string>
+    <string name="quality_good">خوب</string>
+    <string name="quality_fair">متوسط</string>
+    <string name="quality_poor">ضعیف</string>
 
-    <string name="boost">بوست و اجرای بازی</string>
-    <string name="boosting">در حال بهینه‌سازی…</string>
+    <!-- boost overlay -->
+    <string name="boost_step_ram">در حال پاک‌سازی حافظه…</string>
+    <string name="boost_step_net">در حال بررسی شبکه…</string>
+    <string name="boost_step_profile">در حال اعمال پروفایل بازی…</string>
+    <string name="boost_step_launch">در حال اجرای بازی…</string>
+    <string name="boost_done_title">بهینه‌سازی کامل شد</string>
+    <string name="boost_done_fmt">%1$s مگابایت آزاد شد • توقف %2$d فرایند پس‌زمینه درخواست شد</string>
+    <string name="boost_net_line">بررسی شبکه</string>
+    <string name="boost_launch_ok">بازی اجرا شد — پایش در پس‌زمینه ادامه دارد</string>
+    <string name="boost_launch_skip">بازی انتخاب نشده بود — بهینه‌سازی اعمال شد</string>
 
-    <string name="last_title">آخرین بهینه‌سازی</string>
-    <string name="last_line">%1$s مگابایت آزاد شد • %2$d فرایند • %3$s</string>
-    <string name="boost_done_line">%1$s مگابایت آزاد شد • توقف %2$d فرایند پس‌زمینه درخواست شد</string>
-    <string name="no_history">هنوز بهینه‌سازی انجام نشده — دکمه بوست را بزنید</string>
-
-    <string name="games_title">بازی‌ها و اپ‌های نصب‌شده</string>
-    <string name="games_loading">در حال اسکن اپ‌های نصب‌شده…</string>
-    <string name="games_empty">هیچ اپ قابل‌اجرایی پیدا نشد</string>
+    <!-- library -->
+    <string name="library_title">بازی‌های نصب‌شده</string>
+    <string name="pm_note">شناسایی با PackageManager • بازی‌ها اول نمایش داده می‌شوند</string>
     <string name="chip_game">بازی</string>
-    <string name="tap_to_launch">برای اجرا روی هر اپ بزنید</string>
+    <string name="launch_game">اجرای بازی</string>
+    <string name="fav_added">به موردعلاقه اضافه شد</string>
+    <string name="fav_removed">از موردعلاقه حذف شد</string>
+    <string name="profile_title">پروفایل بازی</string>
+    <string name="graphics_label">گرافیک</string>
+    <string name="graphics_low">کم</string>
+    <string name="graphics_balanced">متعادل</string>
+    <string name="graphics_high">زیاد</string>
+    <string name="priority_label">اولویت</string>
+    <string name="priority_fps">فریم</string>
+    <string name="priority_network">شبکه</string>
+    <string name="priority_battery">باتری</string>
+    <string name="profile_saved">پروفایل ذخیره شد</string>
+    <string name="ram_need_low">بازی سبک — با رم کم هم روان اجرا می‌شود</string>
+    <string name="ram_need_med">بازی متوسط — بهتر است اپ‌های پس‌زمینه بسته شوند</string>
+    <string name="ram_need_high">بازی سنگین — پیش از بازی رم را آزاد کنید</string>
+    <string name="test_history">تست‌های قبلی</string>
 
-    <string name="no_root_note">بدون نیاز به روت • داده‌های بازی شما امن می‌ماند • هرگز اپ‌های سیستمی دست‌نخورده می‌مانند • کش Shader محافظت می‌شود تا داخل بازی لگ نیفتد</string>
+    <!-- RAM manager -->
+    <string name="ram_screen_title">مدیریت هوشمند RAM</string>
+    <string name="pressure_low">فشار حافظه: کم</string>
+    <string name="pressure_mid">فشار حافظه: متوسط</string>
+    <string name="pressure_high">فشار حافظه: بالا</string>
+    <string name="precheck_title">بررسی پیش از اجرا</string>
+    <string name="precheck_ok">حافظه کافی است (%1$s گیگابایت آزاد)</string>
+    <string name="precheck_low">حافظه کم است (%1$s گیگابایت آزاد) — ابتدا پاک‌سازی کنید</string>
+    <string name="precheck_none">ابتدا از بخش بازی‌ها یک بازی انتخاب کنید</string>
+    <string name="hogs_title">فعالیت پس‌زمینه (خود برنامه)</string>
+    <string name="hogs_empty">کار پس‌زمینه‌ای از خود برنامه در حال اجرا نیست</string>
+    <string name="own_app">خود برنامه</string>
+    <string name="system_app">سیستمی / محافظت‌شده</string>
+    <string name="stop_own_btn">توقف کارهای پس‌زمینه خود برنامه</string>
+    <string name="stop_own_done_fmt">%1$d کار متوقف شد</string>
+    <string name="cleanables_title">فایل‌های قابل پاک‌سازی (فقط خود برنامه)</string>
+    <string name="clean_btn">پاک‌سازی فایل‌های امن</string>
+    <string name="cleaned_fmt">%1$s مگابایت آزاد شد</string>
+    <string name="shader_protected">محافظت‌شده</string>
+    <string name="shader_warning">کش Shader — حذف آن ممکن است باعث لگ داخل بازی شود</string>
+    <string name="clean_confirm_title">پاک‌سازی فایل‌های حساس؟</string>
+    <string name="clean_confirm_body">کش Shader هم حذف می‌شود و ممکن است موقتاً بازی کند شود. داده‌های بازی هرگز دست‌نخورده می‌مانند.</string>
+    <string name="safe_policy">بدون روت فقط کش همین اپ در دسترس است. کش سایر اپ‌ها و داده بازی امن می‌مانند — عمداً.</string>
+    <string name="last_clean_fmt">آخرین پاک‌سازی %1$s مگابایت آزاد کرد</string>
+
+    <!-- DNS -->
+    <string name="dns_screen_title">تغییر DNS</string>
+    <string name="dns_intro">تأخیر هر سرور با یک اتصال واقعی TCP روی پورت 53 اندازه‌گیری می‌شود. سریع‌ترین را انتخاب و در تنظیمات سیستم اعمال کنید.</string>
+    <string name="dns_region_global">جهانی</string>
+    <string name="dns_region_ir">ایران</string>
+    <string name="dns_ms_fmt">%1$d میلی‌ثانیه</string>
+    <string name="dns_failed">ناموفق</string>
+    <string name="dns_testing">در حال تست…</string>
+    <string name="dns_recommended">پیشنهادشده</string>
+    <string name="dns_apply_hint">اندروید ۹+: تنظیمات ← شبکه ← DNS خصوصی ← وارد کردن نام هاست</string>
+    <string name="dns_copy_ip">کپی IP</string>
+    <string name="dns_privacy_note">این اپ ترافیک شما را تونل نمی‌کند (حالت VPN در نسخه ۲). DNS فقط روی حل نام دامنه اثر دارد.</string>
+
+    <!-- network -->
+    <string name="net_screen_title">بهینه‌ساز شبکه</string>
+    <string name="run_test">اجرای تست شبکه</string>
+    <string name="ping_fmt">پینگ: %1$s میلی‌ثانیه</string>
+    <string name="jitter_fmt">جیتر: %1$s میلی‌ثانیه</string>
+    <string name="loss_fmt">افت بسته: %1$s٪</string>
+    <string name="dns_probe_fmt">حل DNS: %1$s میلی‌ثانیه</string>
+    <string name="score_fmt">امتیاز %1$d از ۱۰۰</string>
+    <string name="suggest_ping">پینگ بالا — به روتر نزدیک‌تر شوید یا به وای‌فای 5GHz بروید</string>
+    <string name="suggest_jitter">جیتر بالا — از مصرف همزمان پهنای باند (دانلود، استریم) بپرهیزید</string>
+    <string name="suggest_loss">افت بسته دیده شد — روتر را ری‌استارت کنید یا از دیتای موبایل استفاده کنید</string>
+    <string name="suggest_dns">یک DNS سریع‌تر از صفحه DNS امتحان کنید</string>
+    <string name="all_good">اتصال برای بازی مناسب است</string>
+    <string name="conn_type">اتصال</string>
+    <string name="test_note">اندازه‌گیری با ۴ پینگ واقعی ICMP به 1.1.1.1</string>
+
+    <!-- monitor -->
+    <string name="monitor_screen_title">پایش عملکرد</string>
+    <string name="cpu_section">پردازنده</string>
+    <string name="cpu_freq_na">خواندن فرکانس روی این دستگاه ممکن نیست</string>
+    <string name="ram_section">حافظه</string>
+    <string name="temp_section">دما</string>
+    <string name="battery_section">باتری</string>
+    <string name="battery_na">اطلاعات باتری در دسترس نیست</string>
+    <string name="history_title">تاریخچه تست‌ها</string>
+    <string name="history_empty">هنوز تستی ثبت نشده</string>
+    <string name="hist_boost">بوست</string>
+    <string name="hist_network">شبکه</string>
+    <string name="hist_dns">DNS</string>
+    <string name="hist_cache">کش</string>
+    <string name="tab_cpu">CPU</string>
+    <string name="tab_ram">رم</string>
+    <string name="tab_temp">دما</string>
+    <string name="tab_history">تاریخچه</string>
+
+    <!-- settings -->
+    <string name="settings_title">تنظیمات</string>
+    <string name="lang_title">زبان</string>
+    <string name="lang_fa">فارسی</string>
+    <string name="lang_en">English</string>
+    <string name="lang_note">برای اعمال زبان، برنامه دوباره باز می‌شود</string>
+    <string name="theme_title">نمایش</string>
+    <string name="theme_dark">تاریک</string>
+    <string name="theme_light">روشن</string>
+    <string name="boosts_title">تنظیمات بوست</string>
+    <string name="perf_mode">حالت عملکرد</string>
+    <string name="perf_mode_sub">در زمان بازی، سرعت به‌جای باتری</string>
+    <string name="bg_clean">پاک‌سازی پس‌زمینه پیش از بوست</string>
+    <string name="bg_clean_sub">درخواست توقف فرایندهای بیکار پس‌زمینه از سیستم</string>
+    <string name="graphics_boost">پیشنهاد گرافیک</string>
+    <string name="graphics_boost_sub">پیشنهاد گرافیک کمتر برای FPS روان‌تر</string>
+    <string name="battery_saver">صرفه‌جویی باتری</string>
+    <string name="battery_saver_sub">محدود کردن بهینه‌سازی‌ها وقتی باتری است</string>
+    <string name="shader_protect">محافظت کش Shader</string>
+    <string name="shader_protect_sub">کش Shader هرگز حذف نمی‌شود (جلوگیری از لگ)</string>
+    <string name="sensitive_confirm">تأیید پاک‌سازی حساس</string>
+    <string name="sensitive_confirm_sub">پیش از حذف هرچیزی غیر از کش امن، بپرس</string>
+    <string name="jobs_title">کارهای پس‌زمینه (WorkManager)</string>
+    <string name="job_cache">پاک‌سازی کش خود اپ</string>
+    <string name="job_check">بررسی اپ‌های نصب‌شده</string>
+    <string name="job_run_now">اجرا در همین لحظه</string>
+    <string name="job_last_run">آخرین اجرا</string>
+    <string name="job_never">هرگز</string>
+    <string name="job_interval_fmt">هر %1$d ساعت</string>
+    <string name="jobs_note">تا حد امکان در حالت بیکاری و شارژ اجرا می‌شود</string>
+    <string name="reset_btn">بازگردانی همه تنظیمات</string>
+    <string name="reset_confirm_title">همه‌چیز بازگردانی شود؟</string>
+    <string name="reset_confirm_body">همه تنظیمات، موردعلاقه‌ها، پروفایل‌ها و تاریخچه پاک می‌شوند. این کار برگشت‌پذیر نیست.</string>
+    <string name="about_title">درباره</string>
+    <string name="about_body">گیم بوستر نسخه ۱.۱.۰ — همراه عملکرد بدون روت. MVVM + Jetpack Compose + DataStore + WorkManager. حریم خصوصی: همه‌چیز روی همین دستگاه می‌ماند.</string>
+
+    <!-- device -->
+    <string name="device_title">دستگاه</string>
+    <string name="model_label">مدل</string>
+    <string name="android_label">اندروید</string>
+    <string name="sdk_label">سطح API</string>
+    <string name="cores_label">هسته‌های CPU</string>
+    <string name="ram_label">رم کل</string>
+    <string name="screen_label">صفحه</string>
+    <string name="battery_label">باتری</string>
+    <string name="battery_na">نامشخص</string>
+    <string name="network_label">شبکه</string>
+    <string name="root_status">وضعیت روت</string>
+    <string name="root_ok">لازم نیست — بدون روت کار می‌کند</string>
+    <string name="compat_title">سازگاری</string>
+    <string name="compat_body">طراحی‌شده برای اندروید ۸ به بالا (API 26+). برخی دستگاه‌ها خواندن فرکانس CPU را محدود می‌کنند — برنامه به‌آرامی پس می‌نشیند.</string>
+    <string name="privacy_ok">همه داده‌ها روی همین دستگاه می‌ماند</string>
+    <string name="charging_label">در حال شارژ</string>
 </resources>

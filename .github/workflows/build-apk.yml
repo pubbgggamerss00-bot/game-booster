@@ -32,25 +32,25 @@ jobs:
 
       - name: Rename APK
         run: |
-          cp android/app/build/outputs/apk/debug/app-debug.apk GameBooster-v1.0.0-debug.apk
+          cp android/app/build/outputs/apk/debug/app-debug.apk GameBooster-v1.1.0-debug.apk
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: GameBooster-debug-apk
-          path: GameBooster-v1.0.0-debug.apk
+          path: GameBooster-v1.1.0-debug.apk
 
       - name: Release APK
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: v1.0.${{ github.run_number }}
-          name: Game Booster APK v1.0.${{ github.run_number }}
+          tag_name: v1.1.${{ github.run_number }}
+          name: Game Booster APK v1.1.${{ github.run_number }}
           body: |
             🎮 **Game Booster — debug APK (no root)**
             Built automatically by GitHub Actions from `android/`.
             Install: enable "Install unknown apps" for your browser/file manager, then open the APK.
           make_latest: true
           fail_on_unmatched_files: true
-          files: GameBooster-v1.0.0-debug.apk
+          files: GameBooster-v1.1.0-debug.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

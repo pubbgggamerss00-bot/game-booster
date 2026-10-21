@@ -1,35 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Game Booster</string>
-    <string name="subtitle">Root-free performance booster for gamers</string>
 
+    <!-- nav / common -->
+    <string name="nav_home">Home</string>
+    <string name="nav_library">Library</string>
+    <string name="nav_monitor">Monitor</string>
+    <string name="nav_settings">Settings</string>
+    <string name="back">Back</string>
+    <string name="close">Close</string>
+    <string name="all">All</string>
+    <string name="favorites">Favorites</string>
+    <string name="search_hint">Search apps…</string>
+    <string name="empty_list">Nothing here</string>
+    <string name="launch">Launch</string>
+    <string name="test_all">Test all servers</string>
+    <string name="best_server">Best server</string>
+    <string name="copied">Copied to clipboard</string>
+    <string name="retry">Retry</string>
+
+    <!-- home -->
+    <string name="select_game_none">No game selected — pick one from Library</string>
     <string name="ram_title">MEMORY (RAM)</string>
-    <string name="ram_usage">%1$s GB used of %2$s GB</string>
-
-    <string name="temp_title">BATTERY TEMPERATURE</string>
+    <string name="ram_usage_fmt">%1$s GB used of %2$s GB</string>
+    <string name="tiles_ram">RAM</string>
+    <string name="tiles_dns">DNS</string>
+    <string name="tiles_network">Network</string>
+    <string name="tiles_device">Device</string>
+    <string name="cores_fmt">%1$d cores</string>
+    <string name="temp_title">Battery temperature</string>
     <string name="temp_value">%1$s °C</string>
-    <string name="temp_na">Not available on this device</string>
-
+    <string name="temp_na">Not available</string>
+    <string name="cpu_title">CPU</string>
+    <string name="boost_btn">BOOST &amp; PLAY</string>
+    <string name="last_boost">LAST OPTIMIZATION</string>
+    <string name="no_history">No optimization yet</string>
     <string name="net_title">NETWORK STATUS</string>
-    <string name="net_checking">Checking…</string>
-    <string name="net_result">Ping %1$s ms • DNS %2$d ms</string>
-    <string name="net_dns_only">DNS %1$d ms (ping blocked)</string>
-    <string name="net_fail">Network check failed</string>
-    <string name="net_note">DNS affects name resolution only — in-game ping may not change</string>
+    <string name="net_checking">Not tested yet</string>
+    <string name="net_note">DNS improves name resolution only — in-game ping may not change</string>
+    <string name="quality_line">%1$s • score %2$d/100</string>
+    <string name="quality_excellent">Excellent</string>
+    <string name="quality_good">Good</string>
+    <string name="quality_fair">Fair</string>
+    <string name="quality_poor">Poor</string>
 
-    <string name="boost">BOOST &amp; PLAY</string>
-    <string name="boosting">Optimizing…</string>
+    <!-- boost overlay -->
+    <string name="boost_step_ram">Cleaning memory…</string>
+    <string name="boost_step_net">Checking network…</string>
+    <string name="boost_step_profile">Applying game profile…</string>
+    <string name="boost_step_launch">Launching game…</string>
+    <string name="boost_done_title">Optimization complete</string>
+    <string name="boost_done_fmt">%1$s MB freed • %2$d background processes asked to stop</string>
+    <string name="boost_net_line">Network check</string>
+    <string name="boost_launch_ok">Game launched — monitor stays in background</string>
+    <string name="boost_launch_skip">No game selected — optimization applied</string>
 
-    <string name="last_title">LAST OPTIMIZATION</string>
-    <string name="last_line">%1$s MB freed • %2$d processes • %3$s</string>
-    <string name="boost_done_line">%1$s MB freed • %2$d background processes asked to stop</string>
-    <string name="no_history">No optimization run yet — tap BOOST</string>
-
-    <string name="games_title">INSTALLED GAMES &amp; APPS</string>
-    <string name="games_loading">Scanning installed apps…</string>
-    <string name="games_empty">No launchable apps found</string>
+    <!-- library -->
+    <string name="library_title">Installed games</string>
+    <string name="pm_note">Detected via PackageManager • games are sorted first</string>
     <string name="chip_game">GAME</string>
-    <string name="tap_to_launch">Tap an app to launch it</string>
+    <string name="launch_game">Launch game</string>
+    <string name="fav_added">Added to favorites</string>
+    <string name="fav_removed">Removed from favorites</string>
+    <string name="profile_title">Game profile</string>
+    <string name="graphics_label">Graphics</string>
+    <string name="graphics_low">Low</string>
+    <string name="graphics_balanced">Balanced</string>
+    <string name="graphics_high">High</string>
+    <string name="priority_label">Priority</string>
+    <string name="priority_fps">FPS</string>
+    <string name="priority_network">Network</string>
+    <string name="priority_battery">Battery</string>
+    <string name="profile_saved">Profile saved</string>
+    <string name="ram_need_low">Light game — runs well on low memory</string>
+    <string name="ram_need_med">Medium game — close background apps first</string>
+    <string name="ram_need_high">Heavy game — free RAM before playing</string>
+    <string name="test_history">Previous tests</string>
 
-    <string name="no_root_note">No root required • Your game data stays safe • System apps are never touched • Shader caches are protected to avoid in-game lag</string>
+    <!-- RAM manager -->
+    <string name="ram_screen_title">Smart RAM manager</string>
+    <string name="pressure_low">Memory pressure: low</string>
+    <string name="pressure_mid">Memory pressure: medium</string>
+    <string name="pressure_high">Memory pressure: high</string>
+    <string name="precheck_title">Pre-launch check</string>
+    <string name="precheck_ok">Enough free memory (%1$s GB available)</string>
+    <string name="precheck_low">Low memory (%1$s GB available) — consider a clean first</string>
+    <string name="precheck_none">Select a game in Library first</string>
+    <string name="hogs_title">Active background work (own app)</string>
+    <string name="hogs_empty">No own background jobs running</string>
+    <string name="own_app">This app</string>
+    <string name="system_app">Protected / system</string>
+    <string name="stop_own_btn">Stop own background jobs</string>
+    <string name="stop_own_done_fmt">%1$d jobs stopped</string>
+    <string name="cleanables_title">Cleanable files (own app only)</string>
+    <string name="clean_btn">Clean safe files</string>
+    <string name="cleaned_fmt">%1$s MB freed</string>
+    <string name="shader_protected">Protected</string>
+    <string name="shader_warning">Shader cache — deleting may cause in-game lag</string>
+    <string name="clean_confirm_title">Clean sensitive files?</string>
+    <string name="clean_confirm_body">This also deletes the shader cache and may cause temporary stutter in games. Game data is never touched.</string>
+    <string name="safe_policy">Without root only this app cache is reachable. Other apps caches and game data stay safe — by design.</string>
+    <string name="last_clean_fmt">Last cleanup freed %1$s MB</string>
+
+    <!-- DNS -->
+    <string name="dns_screen_title">DNS changer</string>
+    <string name="dns_intro">Latency is measured by a real TCP connect (port 53) to each server. Pick the fastest, then set it in system settings.</string>
+    <string name="dns_region_global">Global</string>
+    <string name="dns_region_ir">Iran</string>
+    <string name="dns_ms_fmt">%1$d ms</string>
+    <string name="dns_failed">Failed</string>
+    <string name="dns_testing">Testing…</string>
+    <string name="dns_recommended">Recommended</string>
+    <string name="dns_apply_hint">Android 9+: Settings → Network → Private DNS → enter provider hostname</string>
+    <string name="dns_copy_ip">Copy IP</string>
+    <string name="dns_privacy_note">This app does not tunnel your traffic (VPN mode is planned for v2). DNS choice affects name resolution only.</string>
+
+    <!-- network -->
+    <string name="net_screen_title">Network optimizer</string>
+    <string name="run_test">Run network test</string>
+    <string name="ping_fmt">Ping: %1$s ms</string>
+    <string name="jitter_fmt">Jitter: %1$s ms</string>
+    <string name="loss_fmt">Loss: %1$s %%</string>
+    <string name="dns_probe_fmt">DNS resolve: %1$s ms</string>
+    <string name="score_fmt">Score %1$d/100</string>
+    <string name="suggest_ping">High ping — move closer to the router or switch to 5 GHz Wi-Fi</string>
+    <string name="suggest_jitter">High jitter — avoid shared bandwidth (downloads, streaming)</string>
+    <string name="suggest_loss">Packet loss detected — restart the router or use mobile data</string>
+    <string name="suggest_dns">Try a faster DNS server from the DNS screen</string>
+    <string name="all_good">Connection looks good for gaming</string>
+    <string name="conn_type">Connection</string>
+    <string name="test_note">Measured with 4 real ICMP pings to 1.1.1.1</string>
+
+    <!-- monitor -->
+    <string name="monitor_screen_title">Performance monitor</string>
+    <string name="cpu_section">CPU</string>
+    <string name="cpu_freq_na">Frequency not readable on this device</string>
+    <string name="ram_section">Memory</string>
+    <string name="temp_section">Temperature</string>
+    <string name="battery_section">Battery</string>
+    <string name="battery_na">Battery info not available</string>
+    <string name="history_title">Test history</string>
+    <string name="history_empty">No tests recorded yet</string>
+    <string name="hist_boost">Boost</string>
+    <string name="hist_network">Network</string>
+    <string name="hist_dns">DNS</string>
+    <string name="hist_cache">Cache</string>
+    <string name="tab_cpu">CPU</string>
+    <string name="tab_ram">RAM</string>
+    <string name="tab_temp">Temp</string>
+    <string name="tab_history">History</string>
+
+    <!-- settings -->
+    <string name="settings_title">Settings</string>
+    <string name="lang_title">Language</string>
+    <string name="lang_fa">فارسی</string>
+    <string name="lang_en">English</string>
+    <string name="lang_note">The app restarts to apply the language</string>
+    <string name="theme_title">Theme</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_light">Light</string>
+    <string name="boosts_title">Boost preferences</string>
+    <string name="perf_mode">Performance mode</string>
+    <string name="perf_mode_sub">Prefer speed over battery during play</string>
+    <string name="bg_clean">Clean background before boost</string>
+    <string name="bg_clean_sub">Ask system to stop idle background processes</string>
+    <string name="graphics_boost">Graphics boost hints</string>
+    <string name="graphics_boost_sub">Suggest lower graphics for smoother FPS</string>
+    <string name="battery_saver">Battery saver</string>
+    <string name="battery_saver_sub">Limit optimizations while on battery</string>
+    <string name="shader_protect">Protect shader cache</string>
+    <string name="shader_protect_sub">Never delete shader caches (prevents in-game lag)</string>
+    <string name="sensitive_confirm">Confirm sensitive cleanups</string>
+    <string name="sensitive_confirm_sub">Ask before deleting anything beyond safe cache</string>
+    <string name="jobs_title">Background jobs (WorkManager)</string>
+    <string name="job_cache">Own cache cleanup</string>
+    <string name="job_check">Installed apps check</string>
+    <string name="job_run_now">Run now</string>
+    <string name="job_last_run">Last run</string>
+    <string name="job_never">Never</string>
+    <string name="job_interval_fmt">every %1$d h</string>
+    <string name="jobs_note">Runs when the device is idle and charging where possible</string>
+    <string name="reset_btn">Reset all settings</string>
+    <string name="reset_confirm_title">Reset everything?</string>
+    <string name="reset_confirm_body">All settings, favorites, profiles and history will be erased. This cannot be undone.</string>
+    <string name="about_title">About</string>
+    <string name="about_body">Game Booster v1.1.0 — no-root performance companion. MVVM + Jetpack Compose + DataStore + WorkManager. Your privacy: everything stays on the device.</string>
+
+    <!-- device -->
+    <string name="device_title">Device</string>
+    <string name="model_label">Model</string>
+    <string name="android_label">Android</string>
+    <string name="sdk_label">API level</string>
+    <string name="cores_label">CPU cores</string>
+    <string name="ram_label">Total RAM</string>
+    <string name="screen_label">Screen</string>
+    <string name="battery_label">Battery</string>
+    <string name="battery_na">Unknown</string>
+    <string name="network_label">Network</string>
+    <string name="root_status">Root status</string>
+    <string name="root_ok">Not required — works without root</string>
+    <string name="compat_title">Compatibility</string>
+    <string name="compat_body">Designed for Android 8.0+ (API 26+). Some devices restrict reading CPU frequency — the app degrades gracefully.</string>
+    <string name="privacy_ok">All data stays on this device</string>
+    <string name="charging_label">charging</string>
 </resources>
